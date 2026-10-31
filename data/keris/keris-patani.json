@@ -1,0 +1,30 @@
+{
+  "slug": "keris-patani",
+  "nama": "Keris Patani",
+  "kategori": "Keris Patani",
+  "asalDaerah": "Patani dan kawasan Melayu",
+  "bentukBilah": "Bilah dapat berbentuk lurus atau ber-luk; gaya Melayu Patani dikenal melalui bentuk hulu dan sarung yang khas.",
+  "jumlahLuk": null,
+  "keteranganLuk": "Lurus atau ber-luk; jumlah luk bervariasi.",
+  "ornamen": ["Pamor", "Ukiran hulu", "Warangka kayu"],
+  "bagian": {
+    "bilah": "Badan keris yang ditempa dari logam dan menjadi objek utama pengamatan bentuk.",
+    "luk": "Lekukan pada bilah dengan jumlah yang bervariasi.",
+    "pamor": "Pola permukaan bilah hasil perpaduan logam saat penempaan.",
+    "hulu": "Pegangan keris dengan bentuk ukiran yang mengikuti gaya Melayu Patani.",
+    "warangka": "Sarung keris dari kayu yang dapat diukir dan dihias.",
+    "mendak": "Cincin logam antara hulu dan bilah."
+  },
+  "maknaFilosofis": "Dalam tradisi Melayu, keris sering dipandang sebagai penanda identitas, keberanian, dan adab. Makna ini dapat berbeda menurut daerah dan konteks sosial.",
+  "nilaiBudaya": "Keris Patani merupakan bagian dari warisan budaya Melayu yang mencakup seni tempa, ukir, dan tradisi pusaka. Penelitian lebih lanjut diperlukan untuk memetakan variasi regionalnya.",
+  "sumberReferensi": [
+    "Edward Frey, The Kris: Mystic Weapon of the Malay World (1988) — halaman perlu dilengkapi",
+    "H. Bambang Harsrinuksmo, Ensiklopedia Keris (2004) — halaman perlu dilengkapi",
+    "Museum Negeri kawasan Melayu, catatan koleksi — lembaga dan nomor inventaris perlu dilengkapi"
+  ],
+  "gambarReferensi": null,
+  "statusKonten": "draf",
+  "verifikasiPakar": false,
+  "catatanPakar": "",
+  "dibuatPada": "2026-10-31T00:00:00.000Z"
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "keris-majapahit",
+  "nama": "Keris Majapahit",
+  "kategori": "Keris Majapahit",
+  "asalDaerah": "Jawa Timur — tradisi Majapahit",
+  "bentukBilah": "Bilah umumnya ramping dengan ricikan yang relatif halus; penilaian gaya (tangguh) Majapahit memerlukan pengamatan langsung oleh ahli.",
+  "jumlahLuk": null,
+  "keteranganLuk": "Dikenal dalam bentuk lurus maupun ber-luk ganjil; jumlah luk bervariasi.",
+  "ornamen": ["Pamor", "Ricikan bilah", "Ukiran hulu"],
+  "bagian": {
+    "bilah": "Badan keris yang ditempa dari logam. Pada gaya Majapahit, perhatian diberikan pada proporsi dan kehalusan ricikan.",
+    "luk": "Lekukan pada bilah. Jumlah luk umumnya ganjil, meskipun keris lurus juga lazim.",
+    "pamor": "Pola pada permukaan bilah yang terbentuk dari perpaduan logam saat penempaan. Motif pamor perlu diamati langsung untuk dibaca dengan baik.",
+    "hulu": "Pegangan keris. Bentuk hulu gaya Jawa dapat menjadi petunjuk tradisi regional, tetapi bukan penentu tunggal.",
+    "warangka": "Sarung keris. Bentuk ladrang dan gayaman lazim dalam tradisi Jawa.",
+    "mendak": "Cincin logam antara hulu dan bilah yang membantu memperkuat sambungan dan menambah unsur hiasan."
+  },
+  "maknaFilosofis": "Dalam perspektif tradisional Jawa, keris sering dimaknai sebagai simbol kewibawaan, tanggung jawab, dan keterhubungan dengan leluhur. Pemaknaan ini bersifat tradisional dan dapat berbeda antar komunitas.",
+  "nilaiBudaya": "Keris Majapahit dipelajari sebagai bagian dari sejarah gaya (tangguh) keris Jawa dan menjadi bahan kajian seni tempa, ikonografi, serta tradisi pusaka.",
+  "sumberReferensi": [
+    "Haryono Haryoguritno, Keris Jawa: Antara Mistik dan Nalar (2006) — halaman perlu dilengkapi",
+    "H. Bambang Harsrinuksmo, Ensiklopedia Keris (2004) — halaman perlu dilengkapi",
+    "Museum Nasional Indonesia, catatan koleksi keris — nomor inventaris perlu dilengkapi"
+  ],
+  "gambarReferensi": null,
+  "statusKonten": "draf",
+  "verifikasiPakar": false,
+  "catatanPakar": "",
+  "dibuatPada": "2026-10-31T00:00:00.000Z"
+}

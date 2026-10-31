@@ -1,0 +1,290 @@
+[
+  {
+    "id": "keris",
+    "istilah": "Keris",
+    "definisi": "Senjata tikam tradisional dari Nusantara yang juga berfungsi sebagai pusaka dan simbol budaya.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "bilah",
+    "istilah": "Bilah",
+    "definisi": "Badan keris yang tajam, bagian utama yang ditempa dari logam.",
+    "kategori": "bagian",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "luk",
+    "istilah": "Luk",
+    "definisi": "Lekukan pada bilah keris. Jumlah luk umumnya ganjil, meskipun keris lurus juga lazim.",
+    "kategori": "bentuk",
+    "sumber": ["H. Bambang Harsrinuksmo, Ensiklopedia Keris (2004) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "pamor",
+    "istilah": "Pamor",
+    "definisi": "Pola pada permukaan bilah yang muncul dari perpaduan dan pelipatan logam saat penempaan.",
+    "kategori": "ornamen",
+    "sumber": ["H. Bambang Harsrinuksmo, Ensiklopedia Keris (2004) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "hulu",
+    "istilah": "Hulu",
+    "definisi": "Gagang atau pegangan keris. Bentuknya dapat menunjukkan gaya regional, tetapi bukan penentu tunggal.",
+    "kategori": "bagian",
+    "sumber": ["Haryono Haryoguritno, Keris Jawa: Antara Mistik dan Nalar (2006) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "warangka",
+    "istilah": "Warangka",
+    "definisi": "Sarung keris, umumnya dibuat dari kayu dan dapat berukir atau diberi hiasan.",
+    "kategori": "bagian",
+    "sumber": ["Haryono Haryoguritno, Keris Jawa: Antara Mistik dan Nalar (2006) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "empu",
+    "istilah": "Empu",
+    "definisi": "Pengrajin atau pembuat keris yang ahli dalam menempa bilah dan mengolah pamor.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "ornamen",
+    "istilah": "Ornamen",
+    "definisi": "Hiasan pada keris, termasuk ukiran dan motif pada hulu, warangka, maupun bilah.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "ganja",
+    "istilah": "Ganja",
+    "definisi": "Bagian bilah di dekat hulu yang menjadi landasan bilah dan tempat sambungan dengan mendak.",
+    "kategori": "bagian",
+    "sumber": ["Haryono Haryoguritno, Keris Jawa: Antara Mistik dan Nalar (2006) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "mendak",
+    "istilah": "Mendak",
+    "definisi": "Cincin logam antara hulu dan bilah yang membantu memperkuat sambungan dan menambah unsur hiasan.",
+    "kategori": "bagian",
+    "sumber": ["Haryono Haryoguritno, Keris Jawa: Antara Mistik dan Nalar (2006) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "ricikan",
+    "istilah": "Ricikan",
+    "definisi": "Detail bentuk pada bilah dan bagian keris, misalnya kembang kacang, jenggot, atau lambe gajah.",
+    "kategori": "istilah",
+    "sumber": ["Haryono Haryoguritno, Keris Jawa: Antara Mistik dan Nalar (2006) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "dhapur",
+    "istilah": "Dhapur",
+    "definisi": "Nama atau klasifikasi bentuk keris berdasarkan ciri bilah, seperti lurus atau ber-luk, serta ricikannya.",
+    "kategori": "bentuk",
+    "sumber": ["Haryono Haryoguritno, Keris Jawa: Antara Mistik dan Nalar (2006) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "tangguh",
+    "istilah": "Tangguh",
+    "definisi": "Perkiraan gaya atau periode pembuatan keris berdasarkan ciri visual. Penilaiannya memerlukan pengetahuan ahli dan tidak dapat dipastikan hanya dari foto.",
+    "kategori": "istilah",
+    "sumber": ["Haryono Haryoguritno, Keris Jawa: Antara Mistik dan Nalar (2006) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "kembang-kacang",
+    "istilah": "Kembang Kacang",
+    "definisi": "Bagian ricikan pada pangkal bilah yang bentuknya menyerupai kacang; detailnya menjadi salah satu ciri dhapur.",
+    "kategori": "bagian",
+    "sumber": ["Haryono Haryoguritno, Keris Jawa: Antara Mistik dan Nalar (2006) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "naga",
+    "istilah": "Naga",
+    "definisi": "Motif makhluk naga yang dapat muncul pada bilah, hulu, atau warangka sebagai hiasan dan bagian dari ikonografi tradisional.",
+    "kategori": "ornamen",
+    "sumber": ["H. Bambang Harsrinuksmo, Ensiklopedia Keris (2004) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "kinatah",
+    "istilah": "Kinatah",
+    "definisi": "Hiasan logam mulia, misalnya emas, yang ditempelkan pada bilah atau bagian keris tertentu.",
+    "kategori": "ornamen",
+    "sumber": ["H. Bambang Harsrinuksmo, Ensiklopedia Keris (2004) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "pusaka",
+    "istilah": "Pusaka",
+    "definisi": "Benda yang diwariskan dan dihormati dalam tradisi keluarga atau komunitas. Makna pusaka dapat berbeda antar daerah.",
+    "kategori": "filosofi",
+    "sumber": ["Dokumen proyek Keris AI, Catatan Etika dan Budaya"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "pamor-mlumah",
+    "istilah": "Pamor Mlumah",
+    "definisi": "Istilah untuk pamor yang tampak membentang pada permukaan bilah; pembacaan motifnya memerlukan pengamatan langsung.",
+    "kategori": "ornamen",
+    "sumber": ["Haryono Haryoguritno, Keris Jawa: Antara Mistik dan Nalar (2006) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "pamor-miring",
+    "istilah": "Pamor Miring",
+    "definisi": "Istilah untuk pamor dengan arah motif miring pada bilah. Penamaan dan pembacaannya dapat berbeda menurut sumber.",
+    "kategori": "ornamen",
+    "sumber": ["Haryono Haryoguritno, Keris Jawa: Antara Mistik dan Nalar (2006) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "skor-keyakinan",
+    "istilah": "Skor Keyakinan (Confidence)",
+    "definisi": "Tingkat keyakinan model terhadap prediksinya, biasanya dinyatakan antara 0 dan 1.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "akurasi-top-1",
+    "istilah": "Akurasi Top-1",
+    "definisi": "Persentase prediksi peringkat pertama yang benar.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "akurasi-top-3",
+    "istilah": "Akurasi Top-3",
+    "definisi": "Persentase label yang benar berada di tiga peringkat teratas prediksi model.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "pra-pemrosesan",
+    "istilah": "Pra-pemrosesan",
+    "definisi": "Tahap menyiapkan gambar sebelum dianalisis model, misalnya validasi, pengubahan ukuran, dan normalisasi.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "computer-vision",
+    "istilah": "Computer Vision",
+    "definisi": "Bidang AI yang memungkinkan komputer memahami isi gambar.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "pwa",
+    "istilah": "PWA",
+    "definisi": "Progressive Web App, aplikasi web yang dapat dipasang seperti aplikasi biasa.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "twa",
+    "istilah": "TWA",
+    "definisi": "Trusted Web Activity, cara menampilkan PWA di dalam aplikasi Android tanpa bilah alamat browser.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "apk",
+    "istilah": "APK",
+    "definisi": "Paket instalasi aplikasi Android yang dapat langsung dipasang di perangkat.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "aab",
+    "istilah": "AAB",
+    "definisi": "Android App Bundle, format unggah aplikasi ke Google Play.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "keystore",
+    "istilah": "Keystore",
+    "definisi": "Berkas kunci untuk menandatangani aplikasi Android. Berkas ini harus disimpan di luar repositori dan dicadangkan.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "digital-asset-links",
+    "istilah": "Digital Asset Links",
+    "definisi": "Berkas verifikasi yang menghubungkan domain dengan aplikasi Android, diperlukan agar TWA tampil tanpa bilah alamat.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "capacitor",
+    "istilah": "Capacitor",
+    "definisi": "Framework untuk membungkus aplikasi web menjadi aplikasi native dengan akses ke fitur perangkat.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "append-only",
+    "istilah": "Append-only",
+    "definisi": "Sifat log yang hanya menambah catatan dan tidak mengubah catatan lama.",
+    "kategori": "istilah",
+    "sumber": ["Dokumen proyek Keris AI, Glosarium"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  }
+]
