@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f1e5;
+  color: #241a12;
+}
+
+::selection {
+  background-color: #d9ad55;
+  color: #26170f;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 3px solid #a5742c;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply rounded-2xl border border-sepia-200/80 bg-white/80 p-5 shadow-soft backdrop-blur-sm sm:p-6;
+  }
+
+  .btn-primary {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-sepia-900 px-6 py-3 text-sm font-semibold text-sepia-50 transition hover:bg-sepia-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-secondary {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-sepia-300 bg-white/70 px-6 py-3 text-sm font-semibold text-sepia-900 transition hover:border-sepia-500 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-ghost {
+    @apply inline-flex min-h-10 items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-sepia-800 transition hover:bg-sepia-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-sepia-200 bg-sepia-50 px-3 py-1 text-xs font-medium text-sepia-800;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.24em] text-gold-600;
+  }
+
+  .field-label {
+    @apply mb-2 block text-sm font-semibold text-sepia-900;
+  }
+
+  .text-input {
+    @apply min-h-12 w-full rounded-xl border border-sepia-300 bg-white px-4 py-3 text-sm text-ink shadow-sm placeholder:text-sepia-500/70 focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/30;
+  }
+
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-sepia-900 focus:px-4 focus:py-2 focus:text-sepia-50;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .batik-pattern {
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(196, 146, 58, 0.22) 1px, transparent 0),
+      radial-gradient(circle at 21px 21px, rgba(196, 146, 58, 0.12) 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .animate-rise {
+    animation: rise 0.45s ease-out both;
+  }
+
+  .animate-fade {
+    animation: fade 0.3s ease-out both;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-rise,
+  .animate-fade {
+    animation: none;
+  }
+}
