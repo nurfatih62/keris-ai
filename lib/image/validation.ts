@@ -248,6 +248,7 @@ export function assessPhotoQuality(
 ): PhotoQualityAssessment {
   const catatan: string[] = [];
   let critical = false;
+  let warning = false;
 
   if (metrics.brightness < 0.22) {
     catatan.push("Foto tampak terlalu gelap. Ambil foto dengan cahaya yang cukup.");
@@ -264,6 +265,7 @@ export function assessPhotoQuality(
 
   if (Math.min(metrics.width, metrics.height) < 600) {
     catatan.push("Resolusi foto rendah. Gunakan kamera utama atau gambar yang lebih besar.");
+    warning = true;
   }
 
   if (catatan.length === 0) {
@@ -271,7 +273,7 @@ export function assessPhotoQuality(
   }
 
   return {
-    status: critical ? "kurang" : catatan.length > 1 ? "cukup" : "baik",
+    status: critical ? "kurang" : warning ? "cukup" : "baik",
     catatan,
   };
 }
