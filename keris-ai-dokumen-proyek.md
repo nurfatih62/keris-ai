@@ -1,7 +1,7 @@
 # Aplikasi Identifikasi dan Ensiklopedia Keris Berbasis AI
 
 > **Dokumen Proyek Lengkap**
-> Versi: 0.2 (draf, dengan strategi distribusi Android)
+> Versi: 0.3 (draf, dengan catatan implementasi mode demo)
 > Terakhir diperbarui: 31 Oktober 2026
 > Status: Menunggu konfirmasi kebutuhan (lihat Bagian 12)
 
@@ -342,133 +342,205 @@ Sebuah tugas hanya boleh ditandai selesai jika kriteria "Selesai bila" terpenuhi
 
 ### 10.2 Ringkasan Progres
 
-| Fase | Nama | Jumlah Tugas | Selesai | Progres |
-|------|------|--------------|---------|---------|
-| 0 | Persiapan | 4 | 0 | 0% |
-| 1 | Data Gambar | 5 | 0 | 0% |
-| 2 | Konten Keris | 6 | 0 | 0% |
-| 3 | Model AI | 5 | 0 | 0% |
-| 4 | Frontend dan API | 10 | 0 | 0% |
-| 5 | Integrasi | 4 | 0 | 0% |
-| 6 | Pengujian | 5 | 0 | 0% |
-| 7 | Deployment dan APK | 6 | 0 | 0% |
-| | **Total** | **46** | **0** | **0%** |
+| Fase | Nama | Jumlah Tugas | Selesai | Sebagian | Terblokir | Progres |
+|------|------|--------------|---------|----------|-----------|---------|
+| 0 | Persiapan | 4 | 1 | 1 | 2 | 25% |
+| 1 | Data Gambar | 5 | 0 | 1 | 4 | 0% |
+| 2 | Konten Keris | 6 | 4 | 1 | 1 | 67% |
+| 3 | Model AI | 5 | 0 | 1 | 4 | 0% |
+| 4 | Frontend dan API | 10 | 9 | 1 | 0 | 90% |
+| 5 | Integrasi | 4 | 2 | 0 | 2 | 50% |
+| 6 | Pengujian | 5 | 1 | 1 | 3 | 20% |
+| 7 | Deployment dan APK | 6 | 1 | 1 | 4 | 17% |
+| | **Total** | **45** | **18** | **7** | **20** | **40%** |
+
+> Catatan: daftar tugas pada 10.3 berjumlah 45, bukan 46. Angka 46 pada versi dokumen sebelumnya adalah kekeliruan hitung. Angka "Selesai" hanya untuk tugas yang seluruh kriteria "Selesai bila" terpenuhi; konten budaya tetap berstatus draf sampai T2.6.
 
 ### 10.3 Daftar Tugas
 
 **Fase 0: Persiapan**
 
-- [ ] **T0.1** Konfirmasi seluruh pertanyaan pada Bagian 12.
+- [!] **T0.1** Konfirmasi seluruh pertanyaan pada Bagian 12.
   - *Selesai bila:* setiap pertanyaan memiliki jawaban tertulis.
-- [ ] **T0.2** Kumpulkan referensi literatur keris (buku, katalog museum, sumber dari pakar).
+  - *Status:* terblokir — 13 pertanyaan belum dijawab pemilik proyek.
+- [~] **T0.2** Kumpulkan referensi literatur keris (buku, katalog museum, sumber dari pakar).
   - *Selesai bila:* daftar referensi tersimpan lengkap dengan sumbernya.
-- [ ] **T0.3** Tentukan daftar kategori keris yang didukung.
+  - *Status:* sebagian — daftar awal ada di `docs/referensi.md`; halaman, edisi, dan nomor inventaris belum lengkap.
+- [!] **T0.3** Tentukan daftar kategori keris yang didukung.
   - *Selesai bila:* daftar kategori disetujui oleh tim.
-- [ ] **T0.4** Siapkan repositori dan lingkungan pengembangan.
+  - *Status:* terblokir — enam kategori sementara (`ASUMSI`) belum disetujui tim.
+- [x] **T0.4** Siapkan repositori dan lingkungan pengembangan.
   - *Selesai bila:* proyek Next.js, TypeScript, dan Tailwind CSS berjalan secara lokal.
+  - *Status:* selesai — Next.js 15, TypeScript strict, Tailwind CSS 3; build dan tes lokal lulus.
 
 **Fase 1: Data Gambar**
 
-- [ ] **T1.1** Kumpulkan gambar keris dengan sumber dan izin penggunaan yang jelas.
+- [!] **T1.1** Kumpulkan gambar keris dengan sumber dan izin penggunaan yang jelas.
   - *Selesai bila:* jumlah gambar setiap kelas mencapai target yang disepakati.
-- [ ] **T1.2** Lakukan pelabelan gambar oleh pihak yang memahami keris.
+  - *Status:* terblokir — belum ada dataset gambar berlisensi.
+- [!] **T1.2** Lakukan pelabelan gambar oleh pihak yang memahami keris.
   - *Selesai bila:* seluruh gambar memiliki label yang telah diperiksa.
-- [ ] **T1.3** Bersihkan data (hapus duplikat, gambar buram, dan label yang salah).
+  - *Status:* terblokir — menunggu dataset dan pelabel ahli.
+- [!] **T1.3** Bersihkan data (hapus duplikat, gambar buram, dan label yang salah).
   - *Selesai bila:* tidak ada duplikat dan label telah diverifikasi ulang pada sampel acak.
-- [ ] **T1.4** Bagi dataset menjadi data latih, validasi, dan uji.
+  - *Status:* terblokir — belum ada data.
+- [!] **T1.4** Bagi dataset menjadi data latih, validasi, dan uji.
   - *Selesai bila:* pembagian tercatat dan tidak ada gambar yang muncul di lebih dari satu bagian.
-- [ ] **T1.5** Dokumentasikan metadata dataset.
+  - *Status:* terblokir — belum ada dataset.
+- [~] **T1.5** Dokumentasikan metadata dataset.
   - *Selesai bila:* tersedia ringkasan sumber, jumlah, dan lisensi setiap kelas.
+  - *Status:* sebagian — format metadata dan skrip validasi tersedia di `ml/`, tetapi dataset nyata belum ada.
 
 **Fase 2: Konten Keris**
 
-- [ ] **T2.1** Desain skema database di Supabase.
+- [~] **T2.1** Desain skema database di Supabase.
   - *Selesai bila:* tabel sesuai Bagian 8 telah dibuat dan diuji.
-- [ ] **T2.2** Isi data jenis keris (nama, asal daerah, bentuk, dan ornamen).
+  - *Status:* sebagian — skema, RLS, dan seed siap di `supabase/`; belum diterapkan/diuji karena proyek Supabase belum tersedia.
+- [x] **T2.2** Isi data jenis keris (nama, asal daerah, bentuk, dan ornamen).
   - *Selesai bila:* setiap kategori memiliki entri lengkap.
-- [ ] **T2.3** Tulis penjelasan bagian-bagian keris.
+  - *Status:* selesai untuk enam kategori sementara; semua entri berstatus draf.
+- [x] **T2.3** Tulis penjelasan bagian-bagian keris.
   - *Selesai bila:* setiap bagian utama memiliki penjelasan dan sumber.
-- [ ] **T2.4** Tulis makna filosofis dan nilai budaya setiap jenis.
+  - *Status:* selesai dalam bentuk draf; nomor halaman sumber masih perlu dilengkapi.
+- [x] **T2.4** Tulis makna filosofis dan nilai budaya setiap jenis.
   - *Selesai bila:* setiap entri memiliki penjelasan dan sumber referensi.
-- [ ] **T2.5** Susun kamus istilah.
+  - *Status:* selesai dalam bentuk draf; belum diverifikasi pakar.
+- [x] **T2.5** Susun kamus istilah.
   - *Selesai bila:* istilah pada Glosarium dan istilah tambahan telah dimasukkan.
-- [ ] **T2.6** Verifikasi konten oleh pakar atau narasumber.
+  - *Status:* selesai — 34 istilah, mencakup 21 istilah glosarium dan 13 istilah tambahan.
+- [!] **T2.6** Verifikasi konten oleh pakar atau narasumber.
   - *Selesai bila:* ada catatan persetujuan dari pakar untuk setiap entri.
+  - *Status:* terblokir — pakar/narasumber belum ditunjuk.
 
 **Fase 3: Model AI**
 
-- [ ] **T3.1** Pilih arsitektur model dan buat baseline.
+- [~] **T3.1** Pilih arsitektur model dan buat baseline.
   - *Selesai bila:* baseline memiliki hasil evaluasi awal.
-- [ ] **T3.2** Latih model awal menggunakan data latih.
+  - *Status:* sebagian — kerangka baseline MobileNetV3-Small tersedia di `ml/`; belum dijalankan dan arsitektur belum disetujui (Bagian 7.1).
+- [!] **T3.2** Latih model awal menggunakan data latih.
   - *Selesai bila:* model menyimpan bobot dan konfigurasi pelatihan.
-- [ ] **T3.3** Evaluasi model menggunakan data uji.
+  - *Status:* terblokir — dataset belum tersedia.
+- [!] **T3.3** Evaluasi model menggunakan data uji.
   - *Selesai bila:* metrik pada Bagian 11.4 tercatat di log.
-- [ ] **T3.4** Tentukan ambang keyakinan untuk hasil "tidak dikenali".
+  - *Status:* terblokir — belum ada model terlatih.
+- [!] **T3.4** Tentukan ambang keyakinan untuk hasil "tidak dikenali".
   - *Selesai bila:* ambang ditetapkan berdasarkan hasil evaluasi.
-- [ ] **T3.5** Siapkan model untuk dijalankan di layanan inferensi.
+  - *Status:* terblokir — ambang demo 0,55 bukan hasil evaluasi.
+- [!] **T3.5** Siapkan model untuk dijalankan di layanan inferensi.
   - *Selesai bila:* model dapat dipanggil dan menghasilkan prediksi dari gambar baru.
+  - *Status:* terblokir — belum ada model nyata.
 
 **Fase 4: Frontend dan API**
 
-- [ ] **T4.1** Siapkan Next.js, TypeScript, dan Tailwind CSS.
+- [x] **T4.1** Siapkan Next.js, TypeScript, dan Tailwind CSS.
   - *Selesai bila:* struktur proyek dasar dapat dijalankan.
-- [ ] **T4.2** Buat halaman Home.
+  - *Status:* selesai — `npm run dev`, `npm run build`, dan `npm run typecheck` lulus.
+- [x] **T4.2** Buat halaman Home.
   - *Selesai bila:* halaman tampil dengan pengenalan dan navigasi.
-- [ ] **T4.3** Buat AI Scanner (kamera dan unggah galeri).
+  - *Status:* selesai — beranda, navigasi atas/bawah, dan bagian etika tersedia.
+- [x] **T4.3** Buat AI Scanner (kamera dan unggah galeri).
   - *Selesai bila:* gambar dapat diambil atau diunggah dan dikirim ke API.
-- [ ] **T4.4** Buat endpoint API analisis gambar.
+  - *Status:* selesai — kamera, unggah, drag-and-drop, pratinjau, dan pemeriksaan kualitas.
+- [x] **T4.4** Buat endpoint API analisis gambar.
   - *Selesai bila:* endpoint mengembalikan label, skor, dan data keris.
-- [ ] **T4.5** Buat halaman Hasil Identifikasi.
+  - *Status:* selesai untuk klasifier demo; validasi server dan pembatas laju aktif.
+- [x] **T4.5** Buat halaman Hasil Identifikasi.
   - *Selesai bila:* keenam komponen hasil tampil dengan benar.
-- [ ] **T4.6** Buat halaman Gallery.
+  - *Status:* selesai — enam komponen, kandidat, kualitas, sumber, dan disclaimer.
+- [x] **T4.6** Buat halaman Gallery.
   - *Selesai bila:* riwayat scan tampil dan dapat dihapus.
-- [ ] **T4.7** Buat halaman Kamus Keris dengan pencarian dan filter.
+  - *Status:* selesai — galeri lokal maksimum 30 hasil, detail, dan hapus.
+- [x] **T4.7** Buat halaman Kamus Keris dengan pencarian dan filter.
   - *Selesai bila:* pencarian dan filter berfungsi.
-- [ ] **T4.8** Buat halaman Detail Keris.
+  - *Status:* selesai — 34 istilah, pencarian, filter kategori, dan keadaan kosong.
+- [x] **T4.8** Buat halaman Detail Keris.
   - *Selesai bila:* halaman menampilkan penjelasan lengkap dan sumber.
-- [ ] **T4.9** Pastikan tampilan responsif di berbagai ukuran layar.
+  - *Status:* selesai — bagian, makna, nilai budaya, sumber, dan status konten.
+- [x] **T4.9** Pastikan tampilan responsif di berbagai ukuran layar.
   - *Selesai bila:* seluruh halaman dapat digunakan nyaman di layar ponsel.
-- [ ] **T4.10** Siapkan konfigurasi PWA: manifest web, ikon, dan service worker dasar.
+  - *Status:* selesai — diuji 390×844 dan 1280×900 tanpa luapan horizontal.
+- [~] **T4.10** Siapkan konfigurasi PWA: manifest web, ikon, dan service worker dasar.
   - *Selesai bila:* aplikasi dapat dipasang dari browser Android melalui opsi tambahkan ke layar utama.
+  - *Status:* sebagian — manifest, ikon, service worker, dan halaman offline siap; instalasi di perangkat Android belum diuji.
 
 **Fase 5: Integrasi**
 
-- [ ] **T5.1** Simpan gambar ke Supabase Storage.
+- [!] **T5.1** Simpan gambar ke Supabase Storage.
   - *Selesai bila:* URL gambar tersimpan dan dapat diakses.
-- [ ] **T5.2** Simpan hasil scan ke tabel `hasil_scan`.
+  - *Status:* terblokir — bucket dan RLS sudah dirancang, tetapi proyek Supabase/kredensial belum tersedia.
+- [!] **T5.2** Simpan hasil scan ke tabel `hasil_scan`.
   - *Selesai bila:* data tersimpan saat pengguna memilih simpan ke galeri.
-- [ ] **T5.3** Hubungkan label prediksi dengan data keris.
+  - *Status:* terblokir — galeri masih lokal; integrasi Supabase menunggu kredensial dan keputusan login (Q7).
+- [x] **T5.3** Hubungkan label prediksi dengan data keris.
   - *Selesai bila:* hasil identifikasi menampilkan informasi keris yang sesuai.
-- [ ] **T5.4** Tangani error (koneksi, gambar tidak valid, layanan AI gagal).
+  - *Status:* selesai — label dipetakan ke katalog JSON dan ditampilkan pada hasil.
+- [x] **T5.4** Tangani error (koneksi, gambar tidak valid, layanan AI gagal).
   - *Selesai bila:* setiap skenario error menampilkan pesan yang jelas.
+  - *Status:* selesai — validasi gambar, timeout, error API, dan kuota penyimpanan memiliki pesan; diuji unit/E2E.
 
 **Fase 6: Pengujian**
 
-- [ ] **T6.1** Lakukan uji fungsional seluruh fitur.
+- [x] **T6.1** Lakukan uji fungsional seluruh fitur.
   - *Selesai bila:* seluruh kasus uji fungsional lulus atau memiliki catatan perbaikan.
-- [ ] **T6.2** Uji akurasi model pada data uji dan gambar baru di luar dataset.
+  - *Status:* selesai untuk lingkup mode demo — 44 tes unit dan 6 tes E2E lulus.
+- [!] **T6.2** Uji akurasi model pada data uji dan gambar baru di luar dataset.
   - *Selesai bila:* hasil dicatat di log dan dibandingkan dengan target.
-- [ ] **T6.3** Uji di perangkat Android dengan browser utama.
+  - *Status:* terblokir — belum ada model/dataset; klasifier demo tidak boleh diklaim akurat.
+- [!] **T6.3** Uji di perangkat Android dengan browser utama.
   - *Selesai bila:* alur scan dapat diselesaikan di perangkat fisik.
-- [ ] **T6.4** Uji performa, khususnya waktu respons analisis.
+  - *Status:* terblokir — belum ada perangkat Android fisik dalam lingkungan ini.
+- [~] **T6.4** Uji performa, khususnya waktu respons analisis.
   - *Selesai bila:* waktu respons berada dalam target yang disepakati.
-- [ ] **T6.5** Uji keterbacaan konten oleh pengguna umum.
+  - *Status:* sebagian — respons lokal 31–35 ms (warm) dan 1,6 s (cold); target resmi belum disepakati.
+- [!] **T6.5** Uji keterbacaan konten oleh pengguna umum.
   - *Selesai bila:* responden uji memahami penjelasan tanpa bantuan tambahan.
+  - *Status:* terblokir — belum ada responden uji.
 
 **Fase 7: Deployment dan APK**
 
-- [ ] **T7.1** Deploy aplikasi ke Vercel.
+- [!] **T7.1** Deploy aplikasi ke Vercel.
   - *Selesai bila:* aplikasi dapat diakses melalui URL publik.
-- [ ] **T7.2** Atur environment variable untuk Supabase dan layanan AI.
+  - *Status:* terblokir — akun/akses Vercel belum tersedia.
+- [~] **T7.2** Atur environment variable untuk Supabase dan layanan AI.
   - *Selesai bila:* aplikasi berjalan di produksi tanpa menampilkan kunci rahasia di kode.
-- [ ] **T7.3** Lengkapi README dan dokumentasi.
+  - *Status:* sebagian — `.env.example` dan dokumentasi tersedia; environment produksi belum diatur.
+- [x] **T7.3** Lengkapi README dan dokumentasi.
   - *Selesai bila:* dokumen cara instalasi, penggunaan, dan pemeliharaan tersedia.
-- [ ] **T7.4** Lakukan serah terima dan pelaporan akhir.
+  - *Status:* selesai — README, arsitektur, API, konten, pengujian, Supabase, PWA/TWA, dan status tugas.
+- [!] **T7.4** Lakukan serah terima dan pelaporan akhir.
   - *Selesai bila:* laporan akhir disetujui oleh pemangku kepentingan.
-- [ ] **T7.5** Bungkus PWA menjadi APK atau AAB menggunakan TWA, lalu tandatangani dengan keystore.
+  - *Status:* terblokir — persetujuan pemangku kepentingan belum ada.
+- [!] **T7.5** Bungkus PWA menjadi APK atau AAB menggunakan TWA, lalu tandatangani dengan keystore.
   - *Selesai bila:* APK dapat dipasang dan dibuka di perangkat Android fisik tanpa bilah alamat browser.
-- [ ] **T7.6** Siapkan Digital Asset Links dan simpan keystore beserta cadangannya di luar repositori.
+  - *Status:* terblokir — butuh domain HTTPS, Android SDK, dan keystore (tidak disimpan di repositori).
+- [!] **T7.6** Siapkan Digital Asset Links dan simpan keystore beserta cadangannya di luar repositori.
   - *Selesai bila:* file assetlinks.json dapat diakses dari domain produksi dan cadangan keystore tersimpan dengan aman.
+  - *Status:* terblokir — butuh sertifikat penandatangan produksi dan domain tetap.
+
+### 10.4 Catatan Implementasi (31 Oktober 2026)
+
+Ringkasan pekerjaan yang sudah masuk ke repositori pada cabang `tugas/T4-frontend-api`:
+
+- Aplikasi Next.js 15 + React 19 + TypeScript strict + Tailwind CSS 3 dengan halaman
+  Beranda, Scan, Hasil, Galeri, Kamus, dan Detail Keris.
+- Endpoint `POST /api/analyze` dengan validasi magic bytes/MIME/dimensi/ukuran,
+  pembatas laju, serta klasifier demo deterministik `mock-heuristic-v0.1`.
+- Konten: 6 entri keris dan 34 istilah kamus, seluruhnya `draf` dan
+  `verifikasiPakar: false`.
+- PWA: manifest, ikon 192/512/maskable, service worker, dan halaman offline.
+- Supabase: skema, RLS, bucket privat, dan seed SQL siap; **belum diterapkan**.
+- ML: kerangka validasi dataset, baseline MobileNetV3-Small, dan evaluasi;
+  **belum dijalankan** karena dataset dan keputusan arsitektur belum ada.
+- Dokumentasi: README dan `docs/` (asumsi, arsitektur, konten, API, Supabase,
+  PWA/TWA, pengujian, referensi, status).
+- Hasil verifikasi: 44 tes unit lulus, 6 tes E2E lulus, TypeScript lulus,
+  ESLint 0 error/0 warning, build produksi 16 rute.
+- Performa lokal endpoint (bukan jaminan produksi): sekitar 31–35 ms setelah
+  kompilasi hangat, sekitar 1,6 detik pada permintaan pertama.
+
+Yang **tidak** diklaim: akurasi model, verifikasi budaya oleh pakar, instalasi
+Android/APK, penerapan Supabase, dan deployment publik. Semua itu tercatat sebagai
+tugas terblokir atau sebagian pada 10.2–10.3 dan di `docs/status.md`.
 
 ---
 
@@ -674,6 +746,7 @@ Berikut contoh format dalam bentuk JSON. Nilai yang ada hanya ilustrasi, bukan h
 |-------|---------|-----------|
 | 0.1 | 31 Oktober 2026 | Draf awal |
 | 0.2 | 31 Oktober 2026 | Menambahkan strategi distribusi Android melalui PWA dan TWA (Bagian 6.1), tugas T4.10, T7.5, dan T7.6, risiko terkait APK, serta pertanyaan 12 dan 13. |
+| 0.3 | 31 Oktober 2026 | Memperbarui status 45 tugas (18 selesai, 7 sebagian, 20 terblokir), menambahkan catatan implementasi 10.4, dan mengoreksi jumlah tugas dari 46 menjadi 45. |
 
 ---
 
