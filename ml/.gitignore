@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+ml/runs/
+ml/dataset/train/
+ml/dataset/val/
+ml/dataset/test/
+ml/laporan-validasi.json

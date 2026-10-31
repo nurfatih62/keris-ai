@@ -1,0 +1,4 @@
+file,class,split,source,license,author,date,notes
+contoh/keris-bali-001.jpg,keris-bali,train,"Museum Contoh, katalog",izin-tertulis,"Nama Fotografer",2026-10-31,"Contoh format; jangan dipakai sebagai data nyata"
+contoh/keris-bali-002.jpg,keris-bali,val,"Museum Contoh, katalog",izin-tertulis,"Nama Fotografer",2026-10-31,"Contoh format"
+contoh/keris-bugis-001.jpg,keris-bugis,test,"Museum Contoh, katalog",izin-tertulis,"Nama Fotografer",2026-10-31,"Contoh format"
