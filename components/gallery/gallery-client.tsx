@@ -58,20 +58,37 @@ export function GalleryClient() {
 
   if (records.length === 0) {
     return (
-      <div className="rounded-2xl border border-sepia-200 bg-white/70 p-8 text-center sm:p-12">
-        <BrandMark className="mx-auto h-24 w-24 text-sepia-800" />
-        <h2 className="mt-5 font-serif text-2xl font-bold text-sepia-950">
-          Galeri masih kosong
-        </h2>
-        <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-sepia-600">
-          Hasil yang Anda simpan dari halaman identifikasi akan muncul di sini. Riwayat
-          tersimpan secara lokal di browser perangkat ini.
-        </p>
-        <div className="mt-5 flex flex-col justify-center gap-2 sm:flex-row">
-          <Link href="/scan" className="btn-primary">Mulai Scan Pertama</Link>
-          <Link href="/kamus" className="btn-secondary">Jelajahi Kamus</Link>
+      <div>
+        {status ? (
+          <p
+            className="mb-4 rounded-xl border border-emerald-300 bg-emerald-50 px-4 py-3 text-sm text-emerald-800"
+            role="status"
+          >
+            {status}
+          </p>
+        ) : null}
+        {error ? (
+          <p
+            className="mb-4 rounded-xl border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-800"
+            role="alert"
+          >
+            {error}
+          </p>
+        ) : null}
+        <div className="rounded-2xl border border-sepia-200 bg-white/70 p-8 text-center sm:p-12">
+          <BrandMark className="mx-auto h-24 w-24 text-sepia-800" />
+          <h2 className="mt-5 font-serif text-2xl font-bold text-sepia-950">
+            Galeri masih kosong
+          </h2>
+          <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-sepia-600">
+            Hasil yang Anda simpan dari halaman identifikasi akan muncul di sini. Riwayat
+            tersimpan secara lokal di browser perangkat ini.
+          </p>
+          <div className="mt-5 flex flex-col justify-center gap-2 sm:flex-row">
+            <Link href="/scan" className="btn-primary">Mulai Scan Pertama</Link>
+            <Link href="/kamus" className="btn-secondary">Jelajahi Kamus</Link>
+          </div>
         </div>
-        {error ? <p className="mt-4 text-sm text-red-700" role="alert">{error}</p> : null}
       </div>
     );
   }
