@@ -108,6 +108,24 @@
     "verifikasiPakar": false
   },
   {
+    "id": "keris-carita",
+    "istilah": "Keris Carita",
+    "definisi": "Sebutan untuk keris yang bilahnya diukir dengan adegan atau relief cerita. Penamaan dan perinciannya dapat berbeda menurut sumber.",
+    "kategori": "jenis",
+    "sumber": ["H. Bambang Harsrinuksmo, Ensiklopedia Keris (2004) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
+    "id": "keris-sajen",
+    "istilah": "Keris Sajen",
+    "definisi": "Sebutan untuk keris berukuran kecil yang dikaitkan dengan keperluan persembahan atau praktik tradisional tertentu. Maknanya perlu dijelaskan sesuai konteks komunitas.",
+    "kategori": "jenis",
+    "sumber": ["H. Bambang Harsrinuksmo, Ensiklopedia Keris (2004) — halaman perlu dilengkapi"],
+    "statusKonten": "draf",
+    "verifikasiPakar": false
+  },
+  {
     "id": "tangguh",
     "istilah": "Tangguh",
     "definisi": "Perkiraan gaya atau periode pembuatan keris berdasarkan ciri visual. Penilaiannya memerlukan pengetahuan ahli dan tidak dapat dipastikan hanya dari foto.",
