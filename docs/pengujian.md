@@ -4,7 +4,7 @@
 
 ```bash
 npm test            # unit
-npm run test:e2e    # E2E Playwright (Chromium)
+npm run test:e2e    # E2E Playwright (Google Chrome terpasang)
 npm run lint        # ESLint
 npm run typecheck   # TypeScript strict
 npm run build       # build produksi

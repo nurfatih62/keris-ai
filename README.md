@@ -50,7 +50,7 @@ menyimpan kunci rahasia di repositori.
 | `npm run lint` | ESLint |
 | `npm run typecheck` | Pemeriksaan TypeScript |
 | `npm test` | Tes unit Vitest |
-| `npm run test:e2e` | Uji alur Playwright (butuh browser Chromium) |
+| `npm run test:e2e` | Uji alur Playwright (butuh Google Chrome terpasang) |
 | `npm run icons` | Membuat ulang ikon PWA |
 | `npm run seed:supabase` | Menghasilkan `supabase/seed.sql` dari data JSON |
 
